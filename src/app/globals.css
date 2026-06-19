@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Helvetica Regular";
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot");
+    src: url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a64ff11d2c24584c767f6257e880dc65.svg#Helvetica Regular")format("svg");
+}
+
+@theme {
+  --font-helvetica: "Helvetica Regular", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-solar-gold: #F8B914;
+  --color-solar-gold-hover: #fbc643;
+  --color-solar-gold-active: #e0a309;
+  --color-earth-brown: #644519;
+  --color-deep-brown: #1A120B;
+  --color-cream-base: #FFFDF9;
+  --color-slate-text: #1c1917;
+  --color-navy-accent: #1A120B;
+  --color-navy-solid: #1A120B;
+  --color-rivr-bg: #f7f7f5;
+}
+
+:root {
+  font-family: var(--font-helvetica);
+  --background: #f7f7f5;
+  --foreground: #1c1917;
+  
+  --solar-gold: #F8B914;
+  --solar-gold-hover: #fbc643;
+  --solar-gold-active: #e0a309;
+  --earth-brown: #644519;
+  --deep-brown: #1A120B;
+  --cream-base: #FFFDF9;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* RIVR Glassmorphism Styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 30px rgba(100, 69, 25, 0.01);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(248, 185, 20, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(100, 69, 25, 0.04);
+}
+
+.glass-card-dark {
+  background: rgba(26, 18, 11, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(248, 185, 20, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f7f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6d6d2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b0;
+}
