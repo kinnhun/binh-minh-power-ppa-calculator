@@ -276,7 +276,7 @@ export default function LeadForm() {
                         whileTap={{ scale: 0.995 }}
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer disabled:opacity-60 focus:outline-none shadow-md shadow-solar-gold/20"
+                        className="w-full py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-200 cursor-pointer disabled:opacity-60 focus:outline-none animate-pulse-glow"
                       >
                         {isSubmitting ? (
                           <>

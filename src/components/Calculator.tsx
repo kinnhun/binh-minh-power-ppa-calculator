@@ -232,7 +232,7 @@ export default function Calculator() {
                   const el = document.getElementById("ppa-lead-form");
                   if (el) el.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="w-full py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-250 cursor-pointer shadow-md shadow-solar-gold/15"
+                className="w-full py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all duration-250 cursor-pointer animate-pulse-glow"
               >
                 <span>Nhận báo cáo tiết kiệm cá nhân</span>
                 <ArrowRight className="w-4 h-4" />

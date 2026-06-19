@@ -23,6 +23,21 @@
   --color-navy-accent: #1A120B;
   --color-navy-solid: #1A120B;
   --color-rivr-bg: #f7f7f5;
+  
+  --breakpoint-xs: 360px;
+  
+  --animate-pulse-glow: pulse-glow 2s infinite ease-in-out;
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 4px 12px 0 rgba(248, 185, 20, 0.25);
+    }
+    50% {
+      transform: scale(1.025);
+      box-shadow: 0 4px 22px 6px rgba(248, 185, 20, 0.65);
+    }
+  }
 }
 
 :root {

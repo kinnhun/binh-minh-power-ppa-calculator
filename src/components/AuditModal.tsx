@@ -263,7 +263,7 @@ export default function AuditModal() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full mt-4 py-4 rounded-xl bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 transition-all shadow-md cursor-pointer disabled:opacity-60 focus:outline-none"
+                    className="w-full mt-4 py-4 rounded-xl bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-extrabold text-sm sm:text-base flex items-center justify-center gap-2 transition-all cursor-pointer disabled:opacity-60 focus:outline-none animate-pulse-glow"
                   >
                     {isSubmitting ? (
                       <>

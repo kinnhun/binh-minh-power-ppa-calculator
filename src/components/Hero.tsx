@@ -103,7 +103,7 @@ export default function Hero() {
             <button
               type="button"
               onClick={openAuditModal}
-              className="w-full sm:w-auto px-7 py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-lg shadow-solar-gold/15"
+              className="w-full sm:w-auto px-7 py-4 rounded-full bg-solar-gold hover:bg-solar-gold-hover text-deep-brown font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer animate-pulse-glow"
             >
               <span>Nhận báo cáo tiết kiệm cá nhân</span>
               <ArrowRight className="w-4 h-4" />
@@ -123,29 +123,29 @@ export default function Hero() {
       </div>
 
       {/* Bottom Stats Grid Overlay */}
-      <div className="relative z-10 max-w-5xl mx-auto w-full mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="relative z-10 max-w-5xl mx-auto w-full mt-10 sm:mt-16">
+        <div className="grid grid-cols-3 gap-2 sm:gap-4">
           {stats.map((s, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + idx * 0.15 }}
-              className="p-5 rounded-[2rem] bg-white/[0.04] border border-white/10 backdrop-blur-md flex flex-col text-left justify-between min-h-[120px] hover:border-solar-gold/30 hover:bg-white/[0.06] transition-all duration-300 group cursor-default"
+              className="p-3 sm:p-5 rounded-[1.25rem] sm:rounded-[2rem] bg-white/[0.04] border border-white/10 backdrop-blur-md flex flex-col text-left justify-between min-h-[90px] sm:min-h-[120px] hover:border-solar-gold/30 hover:bg-white/[0.06] transition-all duration-300 group cursor-default"
             >
               <div className="flex justify-between items-start">
-                <span className="text-solar-gold text-[10px] font-black uppercase tracking-wider block">
+                <span className="text-solar-gold text-[8px] sm:text-[10px] font-black uppercase tracking-wider block">
                   {s.label}
                 </span>
-                <div className="w-6 h-6 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-solar-gold/60 group-hover:scale-105 transition-transform duration-300">
+                <div className="hidden sm:flex w-6 h-6 rounded-lg bg-white/5 border border-white/10 items-center justify-center text-solar-gold/60 group-hover:scale-105 transition-transform duration-300">
                   <CheckCircle className="w-3.5 h-3.5" />
                 </div>
               </div>
-              <div className="mt-3">
-                <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-none">
+              <div className="mt-2">
+                <span className="text-base sm:text-2xl md:text-3xl font-bold text-white tracking-tight leading-none">
                   {s.num}
                 </span>
-                <p className="text-[10px] text-stone-400 mt-1 font-medium leading-normal">
+                <p className="text-[8px] sm:text-[10px] text-stone-400 mt-1 font-medium leading-tight sm:leading-normal">
                   {s.desc}
                 </p>
               </div>
