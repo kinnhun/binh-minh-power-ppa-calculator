@@ -266,33 +266,33 @@ export default function Calculator() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-6 border-y border-stone-200/70">
                 <div className="space-y-1">
                   <span className="text-stone-500 text-[10px] uppercase font-bold tracking-wide block">Tiết kiệm/Năm</span>
-                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight">
+                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight block">
                     {formatMillions(savingsYear)}
-                    <span className="text-xs font-normal text-earth-brown ml-0.5">triệu</span>
+                    <span className="text-xs font-bold ml-0.5"> triệu</span>
                   </span>
                 </div>
 
                 <div className="space-y-1">
                   <span className="text-stone-500 text-[10px] uppercase font-bold tracking-wide block">Mỗi tháng</span>
-                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight">
+                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight block">
                     {formatMillions(savingsMonth)}
-                    <span className="text-xs font-normal text-earth-brown ml-0.5">triệu</span>
+                    <span className="text-xs font-bold ml-0.5"> triệu</span>
                   </span>
                 </div>
 
                 <div className="space-y-1">
                   <span className="text-stone-500 text-[10px] uppercase font-bold tracking-wide block">Tích lũy 15 năm</span>
-                  <span className="text-2xl sm:text-3xl font-extrabold text-earth-brown tracking-tight">
+                  <span className="text-2xl sm:text-3xl font-bold text-earth-brown tracking-tight block">
                     {(savings15Years / 1e9).toFixed(1)}
-                    <span className="text-xs font-normal text-slate-700 ml-0.5">tỷ</span>
+                    <span className="text-xs font-bold ml-0.5"> tỷ</span>
                   </span>
                 </div>
 
                 <div className="space-y-1">
                   <span className="text-stone-500 text-[10px] uppercase font-bold tracking-wide block">Giảm phát thải</span>
-                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight">
+                  <span className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight block">
                     {Math.round(co2Reduced)}
-                    <span className="text-xs font-bold text-emerald-600 ml-0.5">tấn CO₂</span>
+                    <span className="text-xs font-bold ml-0.5"> tấn CO₂</span>
                   </span>
                 </div>
               </div>
@@ -411,13 +411,22 @@ export default function Calculator() {
               </div>
 
               {/* Technical index footnote */}
-              <div className="text-[10px] text-stone-400 border-t border-stone-100 pt-4 space-y-1.5 leading-relaxed font-medium">
-                <p>** Công thức áp dụng chuẩn hóa:</p>
-                <ul className="list-disc pl-4 space-y-1">
-                  <li>Công suất theo hóa đơn: Hóa đơn điện ÷ 2.200 đ/kWh × 70% tự dùng ÷ 30 ngày ÷ 4,8 giờ nắng.</li>
-                  <li>Công suất theo diện tích: Diện tích mái khả dụng ÷ 6,5 m²/kWp.</li>
-                  <li>Sản lượng điện/năm: Công suất lắp đặt khả thi × 4,8 giờ nắng × 365 ngày.</li>
-                </ul>
+              <div className="text-[10.5px] text-stone-500 border-t border-stone-100 pt-4 leading-relaxed font-medium flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 select-none">
+                <span>
+                  * Công thức tính toán chi tiết được BMC tối ưu hóa riêng cho từng phụ tải. 
+                  Để nhận giải trình công thức và phương án khảo sát thực tế, anh/chị vui lòng để lại thông tin.
+                </span>
+                <a
+                  href="#ppa-lead-form"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById("ppa-lead-form");
+                    if (el) el.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="text-earth-brown font-extrabold hover:underline whitespace-nowrap inline-flex items-center gap-1 cursor-pointer"
+                >
+                  Liên hệ ngay &rarr;
+                </a>
               </div>
             </div>
 

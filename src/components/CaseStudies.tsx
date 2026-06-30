@@ -7,31 +7,31 @@ import { motion } from "motion/react";
 export default function CaseStudies() {
   const cases = [
     {
-      type: "Nhà máy Nhựa",
+      type: "Nhà máy Nhựa (Vĩnh Phú)",
       location: "KCN VSIP 2, Bình Dương",
-      capacity: "600 kWp",
-      monthlySavings: "~100 triệu",
-      annualSavings: "~1,2 tỷ",
+      capacity: "595 kWp",
+      monthlySavings: "~133 triệu",
+      annualSavings: "~1,6 tỷ",
       clientCapital: "0đ",
       duration: "21 ngày",
       badge: "Vận hành ổn định",
     },
     {
-      type: "Nhà máy Gỗ",
+      type: "Nhà máy Gỗ (Đất Việt)",
       location: "KCN Bàu Bàng, Bình Dương",
-      capacity: "840 kWp",
-      monthlySavings: "~210 triệu",
-      annualSavings: "~2,5 tỷ",
+      capacity: "800 kWp",
+      monthlySavings: "~167 triệu",
+      annualSavings: "~2 tỷ",
       clientCapital: "0đ",
       duration: "25 ngày",
       badge: "I-REC Đã cấp",
     },
     {
-      type: "Nhà máy Xi Măng",
-      location: "Bình Long, Bình Phước",
-      capacity: "4 MWp",
-      monthlySavings: "~290 triệu",
-      annualSavings: "~3,5 tỷ",
+      type: "Nhà máy Xi măng (BP)",
+      location: "Bình Phước",
+      capacity: "4000 kWp",
+      monthlySavings: "~850 triệu",
+      annualSavings: "~10,2 tỷ",
       clientCapital: "0đ",
       duration: "45 ngày",
       badge: "Lớn nhất Bình Phước",
@@ -80,7 +80,7 @@ export default function CaseStudies() {
                 <div className="space-y-6">
                   {/* Card Header */}
                   <div className="flex items-start justify-between gap-3">
-                    <div className="space-y-1">
+                    <div className="space-y-1 min-h-[72px]">
                       <span className="text-[10px] font-black text-stone-400 uppercase tracking-wider block">
                         Case Study
                       </span>

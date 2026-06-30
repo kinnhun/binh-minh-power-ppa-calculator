@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 export default function FAQ() {
   const faqs = [
     {
-      q: "Nếu BMC phá sản, nhà máy tôi mất gì?",
-      a: "Hợp đồng PPA quy định rõ: hệ thống lắp trên mái nhà máy của bạn. Nếu có bất kỳ tình huống bất khả kháng nào xảy ra, hệ thống vẫn giữ nguyên và hoạt động ổn định trên mái, và nhà máy của bạn luôn được ưu tiên hàng đầu để nhận nguồn điện giá rẻ này. Các điều khoản bảo vệ tài sản doanh nghiệp được luật sư tư vấn và quy định cụ thể bằng văn bản trong hợp đồng PPA.",
+      q: "Nếu BMC ngừng hoạt động, doanh nghiệp có bị ảnh hưởng đến hệ thống điện mặt trời không?",
+      a: "Hợp đồng PPA quy định rõ: hệ thống lắp trên mái nhà máy của anh/chị. Nếu có bất kỳ tình huống bất khả kháng nào xảy ra, hệ thống vẫn giữ nguyên và hoạt động ổn định trên mái, và nhà máy của anh/chị luôn được ưu tiên hàng đầu để nhận nguồn điện giá rẻ này. Các điều khoản bảo vệ tài sản doanh nghiệp được luật sư tư vấn và quy định cụ thể bằng văn bản trong hợp đồng PPA.",
     },
     {
       q: "Điện mặt trời chỉ phát ban ngày — khung giờ cao điểm tối thì sao?",
@@ -21,7 +21,7 @@ export default function FAQ() {
     },
     {
       q: "Sau 15 năm hợp đồng PPA hết hạn thì hệ thống sẽ như thế nào?",
-      a: "Sau khi hết hạn hợp đồng PPA 15 năm, Bình Minh Power sẽ chuyển giao toàn bộ quyền sở hữu hệ thống điện mặt trời cho nhà máy của bạn hoàn toàn miễn phí (0đ). Khi đó, doanh nghiệp của bạn có thể tiếp tục sử dụng hệ thống để phát điện miễn phí thêm từ 10 đến 15 năm tiếp theo (tuổi thọ tấm pin tiêu chuẩn là 25–30 năm). Hoặc bạn có thể chọn gia hạn hợp đồng PPA với giá bán điện ưu đãi hơn.",
+      a: "Sau khi hết hạn hợp đồng PPA 15 năm, Bình Minh Power sẽ chuyển giao toàn bộ quyền sở hữu hệ thống điện mặt trời cho nhà máy của anh/chị hoàn toàn miễn phí (0đ). Khi đó, doanh nghiệp của anh/chị có thể tiếp tục sử dụng hệ thống để phát điện miễn phí thêm từ 10 đến 15 năm tiếp theo (tuổi thọ tấm pin tiêu chuẩn là 25–30 năm). Hoặc anh/chị có thể chọn gia hạn hợp đồng PPA với giá bán điện ưu đãi hơn.",
     },
   ];
 

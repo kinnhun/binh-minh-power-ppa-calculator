@@ -13,7 +13,7 @@ import AuditModal from "@/components/AuditModal";
 
 export const metadata: Metadata = {
   title: "Tính Tiết Kiệm PPA 0 Đồng | Điện Mặt Trời Áp Mái — Bình Minh Power",
-  description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của bạn. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
+  description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của anh/chị. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
   keywords: [
     "PPA điện mặt trời áp mái",
     "PPA 0 đồng điện mặt trời",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Bình Minh Power" }],
   openGraph: {
     title: "Tính Tiết Kiệm PPA 0 Đồng | Điện Mặt Trời Áp Mái — Bình Minh Power",
-    description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của bạn. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
+    description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của anh/chị. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
     url: "https://binhminhpower.com/ppa-calculator",
     siteName: "Bình Minh Power",
     locale: "vi_VN",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tính Tiết Kiệm PPA 0 Đồng | Điện Mặt Trời Áp Mái — Bình Minh Power",
-    description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của bạn. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
+    description: "BMC đầu tư hệ thống điện mặt trời trên mái xưởng của anh/chị. Không cần vốn, không rủi ro, giảm trực tiếp 10–20% hóa đơn tiền điện ngay từ tháng đầu tiên.",
   },
   robots: {
     index: true,

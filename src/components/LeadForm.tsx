@@ -112,10 +112,10 @@ export default function LeadForm() {
                 Đăng ký nhận phương án
               </span>
               <h2 className="text-slate-900 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.15]">
-                Nhận báo cáo tiết kiệm riêng cho nhà máy bạn
+                Nhận báo cáo tiết kiệm riêng cho nhà máy anh/chị
               </h2>
               <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-normal">
-                Chuyên viên BMC tính toán chính xác dựa trên hóa đơn điện thực tế và đặc điểm kiến trúc kết cấu mái xưởng của bạn.
+                Chuyên viên BMC tính toán chính xác dựa trên hóa đơn điện thực tế và đặc điểm kiến trúc kết cấu mái xưởng của anh/chị.
               </p>
             </div>
 
@@ -156,7 +156,7 @@ export default function LeadForm() {
                     Gửi yêu cầu thành công!
                   </h3>
                   <p className="text-stone-500 text-xs sm:text-sm leading-relaxed max-w-sm font-normal">
-                    BMC đã tiếp nhận yêu cầu tính toán của bạn. Kỹ sư phụ trách sẽ gửi báo cáo tài chính chi tiết trong vòng 24 giờ làm việc.
+                    BMC đã tiếp nhận yêu cầu tính toán của anh/chị. Kỹ sư phụ trách sẽ gửi báo cáo tài chính chi tiết trong vòng 24 giờ làm việc.
                   </p>
                   <button
                     type="button"

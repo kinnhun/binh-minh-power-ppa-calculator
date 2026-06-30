@@ -18,7 +18,7 @@ export default function Hero() {
   const stats = [
     { num: "0đ", label: "Vốn đầu tư", desc: "BMC tài trợ 100% thiết bị & lắp đặt" },
     { num: "10–20%", label: "Giảm hóa đơn", desc: "Chiết khấu trực tiếp trên biểu giá EVN" },
-    { num: "15 năm", label: "Hợp đồng PPA", desc: "Bàn giao 0đ sở hữu sau thời hạn" },
+    { num: "15-20 năm", label: "Hợp đồng PPA", desc: "Bàn giao 0đ sở hữu sau thời hạn" },
   ];
 
   return (
@@ -77,7 +77,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-[18px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] font-bold text-white mb-5 tracking-tight leading-[1.25] max-w-4xl mx-auto drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]"
           >
-            Nhà máy bạn đang trả bao nhiêu tiền điện mỗi tháng?
+            Nhà máy anh/chị đang trả bao nhiêu tiền điện mỗi tháng?
             <br className="hidden sm:inline" />
             Nhập con số đó vào đây.
           </motion.h1>

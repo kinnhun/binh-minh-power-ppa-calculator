@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Award, Mail, Phone, MapPin, ArrowUp } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -16,15 +16,16 @@ export default function Footer() {
           {/* Column 1: Brand Info */}
           <div className="md:col-span-5 space-y-5 text-left">
             <div className="flex items-center gap-2 select-none">
-              <div className="w-10 h-10 rounded-xl bg-solar-gold flex items-center justify-center text-deep-brown font-bold text-lg border border-earth-brown/20 shrink-0">
-                BMC
+              <div className="h-10 flex items-center justify-center shrink-0">
+                <img
+                  src="/Logo/PNG/Full Color Logo.png"
+                  alt="BMC Logo"
+                  className="h-full w-auto object-contain"
+                />
               </div>
               <div className="flex flex-col leading-none">
                 <span className="text-slate-950 font-black tracking-tight text-lg">
                   Bình Minh Power
-                </span>
-                <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider mt-1.5 px-2.5 py-0.5 rounded-full bg-solar-gold/15 border border-solar-gold/30 text-earth-brown w-fit">
-                  <Award className="w-3.5 h-3.5 text-solar-gold" /> Đại lý I-REC Standard cấp 1
                 </span>
               </div>
             </div>
@@ -39,19 +40,22 @@ export default function Footer() {
             <h4 className="text-slate-900 text-xs font-bold uppercase tracking-wider">Liên hệ & Hỗ trợ</h4>
             
             <div className="space-y-3 text-xs sm:text-sm text-stone-500">
-              <a href="tel:0901234788" className="flex items-center gap-2.5 hover:text-earth-brown transition-colors w-fit">
+              <a href="tel:0913943788" className="flex items-center gap-2.5 hover:text-earth-brown transition-colors w-fit">
                 <Phone className="w-4 h-4 text-earth-brown shrink-0" />
-                <span className="font-semibold text-slate-900">0901 234 788</span>
+                <span className="font-semibold text-slate-900">0913 943 788</span>
               </a>
               
-              <a href="mailto:info@binhminhpower.vn" className="flex items-center gap-2.5 hover:text-earth-brown transition-colors w-fit">
+              <a href="mailto:sales@binhminhpower.com" className="flex items-center gap-2.5 hover:text-earth-brown transition-colors w-fit">
                 <Mail className="w-4 h-4 text-earth-brown shrink-0" />
-                <span>info@binhminhpower.vn</span>
+                <span>sales@binhminhpower.com</span>
               </a>
               
               <div className="flex items-start gap-2.5 leading-relaxed">
                 <MapPin className="w-4 h-4 text-earth-brown shrink-0 mt-0.5" />
-                <span>Tòa nhà BMC, KCN VSIP 2, Thủ Dầu Một, Bình Dương</span>
+                <div className="space-y-1.5 text-stone-500">
+                  <span className="block"><strong className="text-slate-900 font-bold">Trụ sở chính:</strong> Tòa Rox Center, 126 Hồ Tùng Mậu, Phú Diễn, Hà Nội</span>
+                  <span className="block"><strong className="text-slate-900 font-bold">VP Miền Nam:</strong> Tầng 2, Tòa ST.Moritz, 1014 Đ. Phạm Văn Đồng, Hiệp Bình, Hồ Chí Minh</span>
+                </div>
               </div>
             </div>
           </div>

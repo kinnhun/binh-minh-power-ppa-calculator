@@ -154,7 +154,7 @@ export default function AuditModal() {
                   Đăng ký thành công!
                 </h3>
                 <p className="text-stone-600 text-sm leading-relaxed max-w-md mx-auto">
-                  Kỹ sư trưởng mảng PPA dự án của Bình Minh Power đã tiếp nhận yêu cầu và sẽ gọi điện tư vấn phương án thiết kế sơ bộ cho bạn trong vòng 2 giờ.
+                  Kỹ sư trưởng mảng PPA dự án của Bình Minh Power đã tiếp nhận yêu cầu và sẽ gọi điện tư vấn phương án thiết kế sơ bộ cho anh/chị trong vòng 2 giờ.
                 </p>
                 <button
                   type="button"

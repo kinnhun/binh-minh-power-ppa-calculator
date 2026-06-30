@@ -38,7 +38,7 @@ export default function StickyCTA() {
         >
           {/* Hotline Button */}
           <a
-            href="tel:0901234788"
+            href="tel:0913943788"
             className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center text-earth-brown shrink-0 hover:bg-stone-200 hover:border-stone-300 transition-all"
           >
             <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
